@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1F2937;
+    color: white;
+} 
+
+.title, .links {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.links {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
