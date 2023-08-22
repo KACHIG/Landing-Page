@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1F2937;
+    background-image: linear-gradient(#080404, #0180c7);
     color: white;
     z-index: 10;
 } 
@@ -62,7 +62,6 @@ ul {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     flex-direction: row;
     margin: 50px;
     padding: 80px;
@@ -120,7 +119,7 @@ ul {
 .lloydimage, .elieimage, .tioimage, .randyimage {
     width: 16em;
     height: auto;
-    border: 5px solid yellow;
+    border: 5px solid gainsboro;
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 15px 25px black;
@@ -135,4 +134,79 @@ ul {
 .lloydimage:hover, .elieimage:hover, .tioimage:hover, .randyimage:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+.layer3 {
+    background-image: url('../images/lloyd_HOT-SHOT.png');
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer3container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    gap: 16px;
+    background-color: #1f293796;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.layer3text {
+    display: flex;
+    flex-direction: column;
+    color: #F9FAF8;
+    font-size: 36px;
+    gap: 16px;
+}
+
+.layer3qouteend {
+    text-align: end;
+}
+
+.layer3image {
+    width: 200px;
+    height: auto;
+}
+
+.layer4 {
+    background-image: url('../images/sky.png');
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: local;
+    display: flex;
+    justify-content: center;
+}
+
+.layer4header {
+    text-align: center;
+    color: #E5E7EB;
+    font-size: 60px;
+    padding: 25px;
+}
+
+.layer4info {
+    background-image: url('../images/trails_protags.png');
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: scroll;
+    padding: 70px;
+}
+
+.skyfc, .skysc, .sky3rd, .zero, .azure, .cs1, .cs2 , .cs3 , .cs4, .hajimari {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#layer4image {
+    width: 300px;
+    height: auto;
 }
