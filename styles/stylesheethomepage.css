@@ -1,15 +1,28 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header {
+    position: sticky;
+    top: 0;
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #1F2937;
     color: white;
+    z-index: 10;
 } 
+
+#background {
+    position: fixed;
+    object-fit: scale-down;
+    top: 50px;
+    z-index: -2; 
+}
 
 .title, .links {
     margin-left: 100px;
@@ -39,4 +52,71 @@ ul {
     margin: 0;
     padding: 0;
     gap: 25px;
+}
+
+.layer1 {
+    position: relative;
+}
+
+.layer1container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 50px;
+    padding: 80px;
+    background-color: #1f293796;
+    border-radius: 20px;
+}
+
+.layer1-left {
+    margin: 25px 100px 75px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.layer1-right {
+    margin-right: 50px;
+}
+
+.layer1-img {
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.main-text {
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+.secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+} 
+
+
+.layer2container {
+    padding: 25px;
+    position: relative;
+    background-image: linear-gradient(#080404, #0180c7);
+}
+
+.layer2header {
+    color: #E5E7EB;
+    text-align: center;
+}
+
+.layer2info {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lloydimage, .elieimage {
+    width: 16em;
+    height: auto;
 }
