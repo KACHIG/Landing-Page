@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Averia Serif Libre";
+    src: url(../fonts/AveriaSerifLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Averia Serif Libre"; font-weight: bold;
+    src: url(../fonts/AveriaSerifLibre-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Averia Serif Libre"; font-style: italic;
+    src: url(../fonts/AveriaSerifLibre-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/Cuprum-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Cuprum"; font-weight: bold;
+    src: url(../fonts/Cuprum-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Cuprum"; font-weight: bolder;
+    src: url(../fonts/Cuprum-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Cuprum"; font-weight: lighter;
+    src: url(../fonts/AveriaSerifLibre-Light.ttf);
+}
+
+@font-face {
+    font-family: "Cuprum"; font-style: italic;
+    src: url(../fonts/AveriaSerifLibre-Italic.ttf);
+}
