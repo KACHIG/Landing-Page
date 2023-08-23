@@ -14,7 +14,7 @@
 }
 
 @font-face {
-    font-family: "Cuprum";
+    font-family: "Cuprum-Regular";
     src: url(../fonts/Cuprum-Regular.ttf);
 }
 
@@ -36,4 +36,9 @@
 @font-face {
     font-family: "Cuprum"; font-style: italic;
     src: url(../fonts/AveriaSerifLibre-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Cuprum"; font-style: italic; font-weight: lighter;
+    src: url(../fonts/AveriaSerifLibre-LightItalic.ttf);
 }
