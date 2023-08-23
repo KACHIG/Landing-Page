@@ -1,8 +1,24 @@
+@font-face {
+    font-family: "Averia Serif Libre";
+    src: url(../fonts/AveriaSerifLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Averia Serif Libre"; font-weight: bold;
+    src: url(../fonts/AveriaSerifLibre-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Averia Serif Libre"; font-style: italic;
+    src: url(../fonts/AveriaSerifLibre-Italic.ttf);
+}
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "Averia Serif Libre";
 }
 
 .header {
@@ -54,6 +70,7 @@ ul {
     gap: 25px;
 }
 
+
 .layer1 {
     position: relative;
 }
@@ -70,9 +87,40 @@ ul {
 }
 
 .layer1-left {
-    margin: 25px 100px 75px 50px;
+    margin: 65px 100px 65px 50px;
     display: flex;
     flex-direction: column;
+}
+
+.main-text {
+    font-size: 48px;
+    color: #F9FAF8;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+} 
+
+.layer1button {
+    background-color: azure;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 14px;
+    width: 6em;
+    height: 2em;
+    transition: 0.3s;
+}
+
+.layer1button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(0, 0, 0); 
 }
 
 .layer1-right {
@@ -84,17 +132,6 @@ ul {
     height: auto;
     border-radius: 10px;
 }
-
-.main-text {
-    font-size: 48px;
-    color: #F9FAF8;
-}
-
-.secondary-text {
-    font-size: 18px;
-    color: #E5E7EB;
-} 
-
 
 .layer2container {
     padding: 25px;
@@ -123,6 +160,7 @@ ul {
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 15px 25px black;
+    transition: 0.3s;
 }
 
 .lloydsubtext, .eliesubtext, .tiosubtext, .randysubtext {
@@ -192,11 +230,12 @@ ul {
 }
 
 .layer4info {
-    background-image: url('../images/trails_protags.png');
-    background-size: cover;
+    background-image: url('../images/trails_protags_alt.png');
+    background-repeat: no-repeat;
     object-fit: cover;
     background-attachment: scroll;
-    padding: 70px;
+    padding: 0 70px 70px 70px;
+    justify-content: center;
 }
 
 .skyfc, .skysc, .sky3rd, .zero, .azure, .cs1, .cs2 , .cs3 , .cs4, .hajimari {
