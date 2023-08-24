@@ -25,17 +25,34 @@ body {
     z-index: -2; 
 }
 
-.title, .links {
+.title, .headerlinkcontainer {
     margin-left: 100px;
     margin-right: 100px;
 }
 
 .title {
-    font-size: 24px;
+    font-size: 35px;
 }
 
-.links {
-    font-size: 18px;
+.headerlinkcontainer {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: center;
+}
+
+.headerlink1, .headerlink2, .headerlink3 {
+    transition: 0.3s;
+}
+
+.headerlink1:hover, .headerlink2:hover, .headerlink3:hover {
+    transform: scale(1.05);
+}
+
+.mishy {
+    height: 30px;
+    width: auto;
 }
 
 a {
@@ -44,7 +61,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 ul {
@@ -124,6 +141,7 @@ ul {
     text-align: center;
     position: relative;
     background-image: linear-gradient(#080404, #0180c7);
+    box-shadow: 5px 0px 50px;
 }
 
 .layer2header {
@@ -188,6 +206,7 @@ ul {
     color: #F9FAF8;
     font-size: 36px;
     gap: 16px;
+    text-shadow: black 2px 5px 2px;
 }
 
 .layer3qouteend {
@@ -197,6 +216,7 @@ ul {
 .layer3image {
     width: 200px;
     height: auto;
+    filter: drop-shadow(6px 10px 2px rgb(0, 0, 0));
 }
 
 .layer4 {
@@ -206,13 +226,20 @@ ul {
     background-attachment: local;
     display: flex;
     justify-content: center;
+    padding: 30px;
+    box-shadow: 5px 0px 50px;
 }
 
 .layer4header {
     text-align: center;
-    color: #E5E7EB;
-    font-size: 60px;
-    padding: 25px;
+    font-size: 80px;
+    padding: 0 25px 25px 25px;
+    font-family: "Minion Pro Bold Italic";
+    border: white;
+    -webkit-text-stroke: 2px white;
+    background: -webkit-linear-gradient(rgb(37, 29, 81), rgb(27, 152, 208));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .layer4info {
@@ -220,8 +247,10 @@ ul {
     background-repeat: no-repeat;
     object-fit: cover;
     background-attachment: scroll;
-    padding: 0 70px 70px 70px;
-    justify-content: center;
+    padding: 70px 70px 70px 70px;
+    border-radius: 5em;
+    box-shadow: 0 0 100px white;
+    background-color: #08040411;
 }
 
 .skyfc, .skysc, .sky3rd, .zero, .azure, .cs1, .cs2 , .cs3 , .cs4, .hajimari {
@@ -233,10 +262,12 @@ ul {
 }
 
 #gameinfo {
-    font-size: 18px;
+    font-size: 25px;
     color: #E5E7EB;
     text-shadow: black 1px 2px;
     z-index: 5;
+    max-width: 800px;
+    padding: 40px 20px 40px 20px;
     /*background-color: #08040459;*/
 }
 
@@ -249,7 +280,7 @@ ul {
 
 #layer4image:hover {
     transform: scale(1.05);
-    filter: drop-shadow(0 20 35px rgb(0, 0, 0));
+    filter: drop-shadow(0 0 30px white);
 }
 
 .footer {
@@ -262,11 +293,11 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 50px;
 }
 
 .footertext {
-    padding: 10px 20px 10px 20px;
+    padding: 10px 0px 0px 0px;
     font-size: 28px;
     font-weight: lighter;
     font-style: italic;
@@ -300,4 +331,5 @@ ul {
 .footerimage {
     width: 40px;
     height: 40px;
+    padding-left: 20px;
 }

@@ -42,3 +42,8 @@
     font-family: "Cuprum"; font-style: italic; font-weight: lighter;
     src: url(../fonts/AveriaSerifLibre-LightItalic.ttf);
 }
+
+@font-face {
+    font-family: "Minion Pro Bold Italic";
+    src: url(../fonts/Minion-Pro-Bold-Italic.ttf);
+}
